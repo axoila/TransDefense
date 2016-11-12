@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://Scripts/Item.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Bullet.png" type="Texture" id=2]
+
+[node name="BulletTurretItem" type="Control"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+base_turret = "res://Scenes/Turrets/BulletTurret.tscn"
+damage = 1.5
+max_range = 1.0
+projectile_speed = 1.0
+rate_of_fire = 1
+
+[node name="zLayer" type="Node2D" parent="."]
+
+z/z = 2
+
+[node name="TextureFrame" type="TextureFrame" parent="zLayer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -5.0
+margin/top = -12.0
+margin/right = 27.0
+margin/bottom = 22.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+

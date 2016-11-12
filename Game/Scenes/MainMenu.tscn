@@ -1,0 +1,139 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/MainMenuTitle.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://Fonts/MainMenuTitle (copy).fnt" type="BitmapFont" id=3]
+
+[sub_resource type="Theme" id=1]
+
+
+[node name="MainMenu" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = SubResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+__meta__ = { "_edit_lock_":true }
+play_scene = "res://Scenes/Maps/Map1.tscn"
+
+[node name="Label" type="Label" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 416.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 1, 1, 1 )
+text = "TransDefense"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 296.0
+margin/top = 192.0
+margin/right = 304.0
+margin/bottom = 108.0
+custom_constants/separation = 16
+alignment = 0
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 424.0
+margin/bottom = 63.0
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play"
+flat = false
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 79.0
+margin/right = 424.0
+margin/bottom = 142.0
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Settings"
+flat = false
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 158.0
+margin/right = 424.0
+margin/bottom = 221.0
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Credits"
+flat = false
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 237.0
+margin/right = 424.0
+margin/bottom = 300.0
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Exit"
+flat = false
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_Settings_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
+
+

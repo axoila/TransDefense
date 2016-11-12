@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://Scripts/Item.gd" type="Script" id=1]
+[ext_resource path="res://Textures/LaserTurret.png" type="Texture" id=2]
+
+[node name="LaserTurretItem" type="Control"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+base_turret = "res://Scenes/Turrets/LaserTurret.tscn"
+damage = 1
+max_range = 1.25
+projectile_speed = 3.0
+rate_of_fire = 1.25
+
+[node name="Node2D" type="Node2D" parent="."]
+
+z/z = 2
+
+[node name="TextureFrame" type="TextureFrame" parent="Node2D"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -16.0
+margin/top = -16.0
+margin/right = 16.0
+margin/bottom = 16.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+

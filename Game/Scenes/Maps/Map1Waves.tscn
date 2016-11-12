@@ -1,0 +1,687 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Scenes/Attackers/DefaultAttacker.tscn" type="PackedScene" id=1]
+
+[node name="Map1Waves" type="Node"]
+
+[node name="Wave1" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker11" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker12" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker13" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker14" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker15" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker16" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker17" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker18" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker19" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker20" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker21" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker22" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker23" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10 2" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker103" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker106 2" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1063" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1065" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1066" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1067" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1068" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1069" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1070" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1071" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1072" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1073" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1074" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10 3" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker104" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker106" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker107" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker108" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker109" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker110" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker111" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker112" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker113" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker114" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker115" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker116" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker117" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10 4" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker105" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker106 3" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1064" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker1065 2" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10653" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10654" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10655" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10656" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10657" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10658" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10659" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10660" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker10661" parent="Wave1" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave2" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave2" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave2" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave2" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave2" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave3" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave3" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave3" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave3" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave3" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave4" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave4" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave4" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave4" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave4" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave5" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave5" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave5" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave5" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave5" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave6" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave6" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave6" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave6" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave6" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave7" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave7" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave7" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave7" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave7" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave8" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave8" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave8" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave8" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave8" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="Wave9" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="DefaultAttacker6" parent="Wave9" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 16, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker7" parent="Wave9" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 56, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker8" parent="Wave9" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 96, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+[node name="DefaultAttacker9" parent="Wave9" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 136, 0 )
+speed = 250
+cooldown_to_next = 0.3
+max_health = 2
+
+

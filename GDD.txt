@@ -1,0 +1,1 @@
+change socket graphic with language settings
