@@ -45,31 +45,11 @@ enabled = true
 
 [node name="Socket" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 216, 184 )
+transform/pos = Vector2( 400, 192 )
 
 [node name="Socket1" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 304, 216 )
-
-[node name="Socket2" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 392, 200 )
-
-[node name="Socket3" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 488, 216 )
-
-[node name="Socket4" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 560, 192 )
-
-[node name="Socket5" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 632, 216 )
-
-[node name="Socket6" parent="LevelTexture/Sockets" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( 704, 192 )
+transform/pos = Vector2( 680, 208 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -107,8 +87,6 @@ margin/bottom = 0.0
 
 [node name="PartsToolbar" parent="." instance=ExtResource( 4 )]
 
-editor/display_folded = true
-
 [node name="SocketInspector" parent="PartsToolbar"]
 
 editor/display_folded = true
@@ -117,29 +95,9 @@ editor/display_folded = true
 
 editor/display_folded = true
 
-[node name="ScrollContainer" parent="PartsToolbar"]
-
-editor/display_folded = true
-
 [node name="VBoxContainer" parent="PartsToolbar/ScrollContainer"]
 
-editor/display_folded = true
-
-[node name="Panel" parent="PartsToolbar/ScrollContainer/VBoxContainer"]
-
-editor/display_folded = true
-
-[node name="Panel1" parent="PartsToolbar/ScrollContainer/VBoxContainer"]
-
-editor/display_folded = true
-
-[node name="LaserTurretItem" parent="PartsToolbar/ScrollContainer/VBoxContainer/Panel1"]
-
-projectile_speed = 3.0
-
-[node name="Panel2" parent="PartsToolbar/ScrollContainer/VBoxContainer"]
-
-editor/display_folded = true
+margin/bottom = 0.0
 
 [node name="Button" parent="PartsToolbar"]
 

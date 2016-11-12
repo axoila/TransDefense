@@ -17,12 +17,5 @@ func _process(delta):
 			get_parent().add_child(new_bullet)
 			new_bullet.init(__attackers_in_range[focus_on], damage)
 			new_bullet.speed = projectile_speed
-
-#func _area_enter(area):
-#	var new_in_range = area.get_parent()
-#	if(new_in_range.is_in_group("Attacker")):
-#		__attackers_in_range.append(new_in_range)
-#		if(focus_mode == "first"):
-#			if(focus_on == null or new_in_range.get_offset() > focus_on.get_offset()):
-#				focus_on = new_in_range
-#				print(str("mouse over", focus_on))
+			if(slow != 1):
+				new_bullet.mini_stun = true

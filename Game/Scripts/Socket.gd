@@ -10,10 +10,14 @@ func _ready():
 	pass
 
 func set_slot(item, index):
-	items[index] = item
+	if(item == null):
+		items[index] = null
+	else:
+		items[index] = item.duplicate()
+	
 	if(index == 0):
 		if(item != null):
-			turret = item.get_turret()
+			turret = items[0].get_turret()
 			add_child(turret)
 			turret.set_pos(Vector2(0, 0))
 		else:
@@ -21,10 +25,12 @@ func set_slot(item, index):
 			turret.queue_free()
 			turret = null
 	
+	#print(item, " at: ", index)
+	
 	if(turret != null):
 		turret.calc_values()
 
 func get_slot(index):
-	if(items[index] == null):
+	if(items[index] == null || typeof(items[index]) == TYPE_NIL):
 		return null
-	return items[index]
+	return items[index].duplicate()

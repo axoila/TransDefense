@@ -4,7 +4,7 @@ extends KinematicBody2D
 var target = null
 var damage = 0
 var speed = 100
-
+var mini_stun = false
 
 var __lifetime
 
@@ -27,9 +27,12 @@ func collision(area):
 	var new_in_range = area.get_node("..")
 	if(new_in_range.is_in_group("Attacker")):
 		new_in_range.damage(damage)
+		if(mini_stun):
+			new_in_range.slowed = 0
+		queue_free()
 
 func init(target, damage):
 	self.target = target
 	target_ref = weakref(target)
 	self.damage = damage
-	__lifetime
+	__lifetime = 0

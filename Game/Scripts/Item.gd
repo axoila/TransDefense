@@ -8,6 +8,7 @@ export(float) var damage = 1 setget ,get_damage
 export(float) var max_range = 1 setget ,get_max_range
 export(float) var projectile_speed = 1 setget ,get_projectile_speed
 export(float) var rate_of_fire = 1 setget ,get_rate_of_fire
+export(float) var slow = 1 setget ,get_slow
 
 # variables of the base turret that are somehow important
 var base_max_range
@@ -42,3 +43,6 @@ func get_projectile_speed():
 	
 func get_rate_of_fire():
 	return rate_of_fire
+
+func get_slow():
+	return slow

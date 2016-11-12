@@ -3,19 +3,22 @@ extends Sprite
 export(String, FILE) var item_path = "res://Scenes/BulletTurretItem.tscn"
 
  # values before calculating secondary slots
-var base_damage = 5.0 # damage per bullet
-var base_rate_of_fire = 1
-var base_max_range = 100
-var base_projectile_speed = 100
+export var base_damage = 5.0 # damage per bullet
+export var base_rate_of_fire = 1
+export var base_max_range = 100
+export var base_projectile_speed = 100
+export var base_slow = 1.0
 
  # values after calculating secondary slots
 var damage = 0 # damage per bullet
 var rate_of_fire = 0
 var max_range = 0
 var projectile_speed = 0
+var slow = 0
 
 var focus_mode = "first"
 var focus_on = -1 #index in __attackers_in_range
+var turn = true #if the turret should look at the attackers
 
 var __attackers_in_range = []
 var __attackers_wr = [] #weakrefs to the attackers so I can check if they're freed or not
@@ -43,8 +46,9 @@ func _process(delta):
 	
 	# turn towards attacker
 	if(focus_on > -1):
-		if(__attackers_wr[focus_on].get_ref() != null):
-			set_rot(get_parent().get_angle_to(__attackers_in_range[focus_on].get_global_pos()) + PI)
+		if(__attackers_wr[focus_on].get_ref()):
+			if(turn):
+				set_rot(get_parent().get_angle_to(__attackers_in_range[focus_on].get_global_pos()) + PI)
 		else:
 			__attackers_in_range.remove(focus_on)
 			__attackers_wr.remove(focus_on)
@@ -71,6 +75,7 @@ func calc_values():
 	rate_of_fire = base_rate_of_fire
 	projectile_speed = base_projectile_speed
 	max_range = base_max_range
+	slow = base_slow
 	for slot_index in range(1, 3):
 		var item = get_parent().items[slot_index]
 		if(item != null):
@@ -78,4 +83,5 @@ func calc_values():
 			rate_of_fire *= item.get_rate_of_fire()
 			projectile_speed *= item.get_projectile_speed()
 			max_range *= item.get_max_range()
+			slow *= item.get_slow()
 	get_node("Area2D/CollisionShape2D").get_shape().set_radius(max_range)
