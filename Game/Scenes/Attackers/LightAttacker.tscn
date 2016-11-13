@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://Scripts/Attacker.gd" type="Script" id=1]
-[ext_resource path="res://Textures/Attacker1.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Attacker3.png" type="Texture" id=2]
 [ext_resource path="res://Styling/HealthBar.tres" type="StyleBox" id=3]
 [ext_resource path="res://Styling/HealthBarBackground.tres" type="StyleBox" id=4]
 
@@ -10,7 +10,7 @@
 custom_solver_bias = 0.0
 radius = 24.0
 
-[node name="DefaultAttacker" type="PathFollow2D" groups=[ "Attacker" ]]
+[node name="LightAttacker" type="PathFollow2D" groups=[ "Attacker" ]]
 
 offset = 0.0
 h_offset = 0.0
@@ -20,10 +20,10 @@ cubic_interp = true
 loop = true
 lookahead = 4.0
 script/script = ExtResource( 1 )
-speed = 200
+speed = 500
 position = 0
-cooldown_to_next = 0.5
-max_health = 3
+cooldown_to_next = 0.2
+max_health = 2
 
 [node name="AttackerSprite" type="Sprite" parent="."]
 
@@ -31,6 +31,7 @@ texture = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
+editor/display_folded = true
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -64,7 +65,7 @@ range/min = 0.0
 range/max = 100.0
 range/step = 1.0
 range/page = 0.0
-range/value = 1.0
+range/value = 50.0
 range/exp_edit = false
 range/rounded = false
 percent/visible = false

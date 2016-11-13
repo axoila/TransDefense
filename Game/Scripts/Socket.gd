@@ -21,8 +21,8 @@ func set_slot(item, index):
 			add_child(turret)
 			turret.set_pos(Vector2(0, 0))
 		else:
-			remove_child(turret)
 			turret.queue_free()
+			remove_child(turret)
 			turret = null
 	
 	#print(item, " at: ", index)

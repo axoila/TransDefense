@@ -30,9 +30,3 @@ func _process(delta):
 			time_field.set_scale(Vector2(0, 0))
 			get_node("TimeField/Particles2D").set_amount(0)
 			active = false
-
-func calc_values():
-	.calc_values()
-	var time_field = get_node("TimeField")
-	var size = (2.0 * max_range) / time_field.get_texture().get_height()
-	time_field.set_scale(Vector2(size, size))

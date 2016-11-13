@@ -1,8 +1,24 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://Scripts/Canvas.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Elements/SocketInspector.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Textures/item_list_background.png" type="Texture" id=3]
+[ext_resource path="res://Styling/ItemBox.tres" type="StyleBox" id=4]
+[ext_resource path="res://Scenes/Turrets/BulletTurretItem.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Turrets/LaserTurretItem.tscn" type="PackedScene" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0, 0, 0, 0.600571 )
+light_color = Color( 0.953125, 0.664765, 0.4021, 0.5 )
+dark_color = Color( 0.609375, 0.228516, 0, 0.5 )
+border_size = 0
+border_blend = false
+draw_bg = true
 
 [node name="PartsToolbar" type="Control"]
 
@@ -44,7 +60,6 @@ stretch_mode = 3
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 
-editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -68,7 +83,7 @@ size_flags/vertical = 0
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 100.0
-margin/bottom = 650.0
+margin/bottom = 0.0
 custom_constants/separation = 10
 alignment = 0
 
@@ -87,5 +102,367 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Start Round"
 flat = false
+
+[node name="Panel 2" type="Panel" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -904.0
+margin/top = 0.0
+margin/right = 120.0
+margin/bottom = 600.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Panel" type="Panel" parent="Panel 2"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 344.0
+margin/top = 200.0
+margin/right = 600.0
+margin/bottom = 344.0
+custom_styles/panel = ExtResource( 4 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel 2/Panel"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
+margin/bottom = 32.0
+custom_constants/separation = 32
+alignment = 0
+
+[node name="Button" type="Button" parent="Panel 2/Panel/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 80.0
+margin/bottom = 80.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="BulletTurretItem" parent="Panel 2/Panel/HBoxContainer/Button" instance=ExtResource( 5 )]
+
+margin/left = 40.0
+margin/top = 40.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="Button1" type="Button" parent="Panel 2/Panel/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 112.0
+margin/top = 0.0
+margin/right = 192.0
+margin/bottom = 80.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="LaserTurretItem" parent="Panel 2/Panel/HBoxContainer/Button1" instance=ExtResource( 6 )]
+
+margin/left = 40.0
+margin/top = 40.0
+margin/right = 40.0
+margin/bottom = 40.0
+slow = 1
+
+[node name="Stats" type="Panel" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -480.0
+margin/top = 80.0
+margin/right = -288.0
+margin/bottom = 224.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Stats"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 16.0
+margin/top = 16.0
+margin/right = 176.0
+margin/bottom = 128.0
+custom_constants/separation = 8
+alignment = 0
+
+[node name="Container" type="Container" parent="Stats/VBoxContainer"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 16 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 160.0
+margin/bottom = 16.0
+
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Container"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "Damage:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="Stats/VBoxContainer/Container"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "300%"
+align = 2
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Container1" type="Container" parent="Stats/VBoxContainer"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 16 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 24.0
+margin/right = 160.0
+margin/bottom = 40.0
+
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Container1"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "Rate of Fire:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="Stats/VBoxContainer/Container1"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "300%"
+align = 2
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Container2" type="Container" parent="Stats/VBoxContainer"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 16 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 160.0
+margin/bottom = 64.0
+
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Container2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "Tower Range:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="Stats/VBoxContainer/Container2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "300%"
+align = 2
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Container3" type="Container" parent="Stats/VBoxContainer"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 16 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 72.0
+margin/right = 160.0
+margin/bottom = 88.0
+
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Container3"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "Projectile Speed:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="Stats/VBoxContainer/Container3"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "300%"
+align = 2
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Container4" type="Container" parent="Stats/VBoxContainer"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 16 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 96.0
+margin/right = 160.0
+margin/bottom = 112.0
+
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Container4"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "Slow:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="Stats/VBoxContainer/Container4"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+text = "300%"
+align = 2
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 

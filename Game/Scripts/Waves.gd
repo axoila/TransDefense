@@ -30,7 +30,7 @@ func _process(delta):
 			current_attacker_index+=1
 			if(current_attacker_index >= attackers.size()):
 				spawning = false
-				emit_signal("spawning_ended")
+				emit_signal("spawning_ended", current_wave_index-1)
 				print("the wave has ended - no more attackers will be spawning")
 
 func add(attacker):
@@ -42,12 +42,13 @@ func remove(attacker):
 		active_attackers.remove(index)
 	if(active_attackers.size() == 0 and !spawning):
 		wave_running = false
+		emit_signal("wave_ended", current_wave_index-1)
 		print ("the last enemies were defeated, round end")
 
 func start_wave():
 	if(!wave_running):
 		if(current_wave_index >= waves.size()):
-			print("out of waves for this map")
+			get_tree().change_scene("res://Scenes/Credits.tscn")
 			return
 		wave_running = true
 		spawning = true

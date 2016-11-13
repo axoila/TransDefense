@@ -38,7 +38,7 @@ func _process(delta):
 	var attacker_index = 0
 	while (attacker_index < __attackers_in_range.size()):
 		if(__attackers_wr[attacker_index].get_ref() == null || \
-				__attackers_in_range[attacker_index].get_global_pos().distance_to(get_global_pos()) > max_range+16):
+				__attackers_in_range[attacker_index].get_global_pos().distance_to(get_global_pos()) > max_range+24):
 			__attackers_in_range.remove(attacker_index)
 			__attackers_wr.remove(attacker_index)
 			focus()

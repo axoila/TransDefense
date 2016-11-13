@@ -7,7 +7,7 @@ func _process(delta):
 	._process(delta)
 	# set laser scale and apply damage
 	if(focus_on != -1):
-		get_node("Laser").set_scale(Vector2(1, get_global_pos().distance_to(__attackers_in_range[focus_on].get_global_pos())))
+		get_node("Laser").set_scale(Vector2(1, min(get_global_pos().distance_to(__attackers_in_range[focus_on].get_global_pos()), max_range)))
 		__attackers_in_range[focus_on].damage(damage * delta)
 		__attackers_in_range[focus_on].slowed = 2 - slow
 	else:
